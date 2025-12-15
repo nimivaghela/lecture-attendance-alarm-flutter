@@ -50,3 +50,9 @@ Designed for **India / Ahmedabad** timezone (IST, `Asia/Kolkata`) and tested on 
 git clone https://github.com/<your-username>/lecture-attendance-alarm-flutter.git
 cd lecture-attendance-alarm-flutter
 
+
+## License
+
+This project is licensed under the MIT License – see the [LICENSE](LICENSE) file for details.
+
+
