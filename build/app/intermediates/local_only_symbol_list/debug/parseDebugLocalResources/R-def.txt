@@ -1,0 +1,8 @@
+R_DEF: Internal format may change without notice
+local
+drawable attendance
+drawable launch_background
+mipmap ic_launcher
+raw lecture_alert
+style LaunchTheme
+style NormalTheme
