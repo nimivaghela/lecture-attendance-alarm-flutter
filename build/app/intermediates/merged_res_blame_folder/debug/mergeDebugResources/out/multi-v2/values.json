@@ -42,6 +42,25 @@
                     }
                 },
                 {
+                    "source": "/Users/nimisha/MY_STUFFS/INFLIBNET/lecture-attendance-alarm-flutter/android/app/src/main/res/values/styles.xml",
+                    "from": {
+                        "startLines": "3,14",
+                        "startColumns": "4,4",
+                        "startOffsets": "173,818",
+                        "endLines": "7,16",
+                        "endColumns": "12,12",
+                        "endOffsets": "476,982"
+                    },
+                    "to": {
+                        "startLines": "1493,1497",
+                        "startColumns": "4,4",
+                        "startOffsets": "93883,94064",
+                        "endLines": "1496,1499",
+                        "endColumns": "12,12",
+                        "endOffsets": "94059,94228"
+                    }
+                },
+                {
                     "source": "/Users/nimisha/.gradle/caches/8.10.2/transforms/aed2861b2b6894f7067df3f3f96b791f/transformed/jetified-window-1.2.0/res/values/values.xml",
                     "from": {
                         "startLines": "2,3,9,17,25,37,43,49,50,51,52,53,54,55,61,66,74,89",
@@ -272,25 +291,6 @@
                         "startOffsets": "18512,18552,18769,19107,19162,20179,20233,20285,20334,20395",
                         "endColumns": "39,46,42,54,46,53,51,48,60,49",
                         "endOffsets": "18547,18594,18807,19157,19204,20228,20280,20329,20390,20440"
-                    }
-                },
-                {
-                    "source": "/Users/nimisha/MY_STUFFS/INFLIBNET/lecture_attendance_alarm_app/android/app/src/main/res/values/styles.xml",
-                    "from": {
-                        "startLines": "3,14",
-                        "startColumns": "4,4",
-                        "startOffsets": "173,818",
-                        "endLines": "7,16",
-                        "endColumns": "12,12",
-                        "endOffsets": "476,982"
-                    },
-                    "to": {
-                        "startLines": "1493,1497",
-                        "startColumns": "4,4",
-                        "startOffsets": "93883,94064",
-                        "endLines": "1496,1499",
-                        "endColumns": "12,12",
-                        "endOffsets": "94059,94228"
                     }
                 }
             ]

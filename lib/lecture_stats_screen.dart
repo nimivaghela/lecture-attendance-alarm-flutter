@@ -1,3 +1,4 @@
+// lib/lecture_stats_screen.dart
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
@@ -14,9 +15,9 @@ class _LectureStatsScreenState extends State<LectureStatsScreen> {
   bool _loading = true;
   late LectureSettings _settings;
 
-  int l1Attended = 0, l1Missed = 0;
-  int l2Attended = 0, l2Missed = 0;
-  int l3Attended = 0, l3Missed = 0;
+  // Parallel lists for stats, aligned by index with _settings.lectures
+  List<int> _attended = [];
+  List<int> _missed = [];
 
   @override
   void initState() {
@@ -28,14 +29,26 @@ class _LectureStatsScreenState extends State<LectureStatsScreen> {
     final prefs = await SharedPreferences.getInstance();
     final settings = await LectureSettingsService.load();
 
+    // Use defaults if nothing in storage
+    final lectures =
+        settings.lectures.isNotEmpty
+            ? settings.lectures
+            : LectureSettings.defaultSettings.lectures;
+
+    final attended = <int>[];
+    final missed = <int>[];
+
+    for (int i = 0; i < lectures.length; i++) {
+      final keyIndex = i + 1; // L1, L2, L3, ...
+
+      attended.add(prefs.getInt('attendance_L${keyIndex}_attended') ?? 0);
+      missed.add(prefs.getInt('attendance_L${keyIndex}_missed') ?? 0);
+    }
+
     setState(() {
-      _settings = settings;
-      l1Attended = prefs.getInt('attendance_L1_attended') ?? 0;
-      l1Missed = prefs.getInt('attendance_L1_missed') ?? 0;
-      l2Attended = prefs.getInt('attendance_L2_attended') ?? 0;
-      l2Missed = prefs.getInt('attendance_L2_missed') ?? 0;
-      l3Attended = prefs.getInt('attendance_L3_attended') ?? 0;
-      l3Missed = prefs.getInt('attendance_L3_missed') ?? 0;
+      _settings = LectureSettings(lectures: lectures);
+      _attended = attended;
+      _missed = missed;
       _loading = false;
     });
   }
@@ -53,13 +66,19 @@ class _LectureStatsScreenState extends State<LectureStatsScreen> {
         foregroundColor: Colors.white,
         title: const Text('Lecture Attendance Stats'),
       ),
-      body: ListView(
+      body: ListView.builder(
         padding: const EdgeInsets.all(16),
-        children: [
-          _statCard('L1 - ${_settings.lecture1Name}', l1Attended, l1Missed),
-          _statCard('L2 - ${_settings.lecture2Name}', l2Attended, l2Missed),
-          _statCard('L3 - ${_settings.lecture3Name}', l3Attended, l3Missed),
-        ],
+        itemCount: _settings.lectures.length,
+        itemBuilder: (context, index) {
+          final lecture = _settings.lectures[index];
+          final attended = _attended.length > index ? _attended[index] : 0;
+          final missed = _missed.length > index ? _missed[index] : 0;
+          final title =
+              'L${index + 1} - ${lecture.name}'
+              '${lecture.enabled ? '' : ' (Disabled)'}';
+
+          return _statCard(title, attended, missed);
+        },
       ),
     );
   }

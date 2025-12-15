@@ -76,36 +76,23 @@ class LectureNotificationService {
 
   /// Called from LectureHomeScreen._saveAndSchedule()
   Future<void> scheduleFromSettings(LectureSettings s) async {
-    await init(); // ensure initialized if not already
-
+    await init();
     await cancelAll();
 
-    // L1
-    await _scheduleDailyLecture(
-      id: 1,
-      lectureKey: 'L1',
-      title: s.lecture1Name,
-      hour: s.lecture1Hour,
-      minute: s.lecture1Minute,
-    );
+    for (int i = 0; i < s.lectures.length; i++) {
+      final lec = s.lectures[i];
+      if (!lec.enabled) continue; // skip disabled
 
-    // L2
-    await _scheduleDailyLecture(
-      id: 2,
-      lectureKey: 'L2',
-      title: s.lecture2Name,
-      hour: s.lecture2Hour,
-      minute: s.lecture2Minute,
-    );
-
-    // L3
-    await _scheduleDailyLecture(
-      id: 3,
-      lectureKey: 'L3',
-      title: s.lecture3Name,
-      hour: s.lecture3Hour,
-      minute: s.lecture3Minute,
-    );
+      await _scheduleDailyLecture(
+        id: i + 1,
+        // unique id
+        lectureKey: 'L${i + 1}',
+        title: lec.name,
+        hour: lec.hour,
+        minute: lec.minute,
+        // you can optionally use lec.days to schedule only on certain weekdays
+      );
+    }
   }
 
   Future<void> _scheduleDailyLecture({
@@ -125,7 +112,7 @@ class LectureNotificationService {
       now.day,
       hour,
       minute,
-      0
+      0,
     );
 
     // ---- MINUTE-BASED LOGIC ----

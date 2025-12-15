@@ -13,23 +13,23 @@
 13         to allow setting breakpoints, to provide hot reload, etc.
 14    -->
 15    <uses-permission android:name="android.permission.INTERNET" />
-15-->/Users/nimisha/MY_STUFFS/INFLIBNET/lecture_attendance_alarm_app/android/app/src/debug/AndroidManifest.xml:6:5-66
-15-->/Users/nimisha/MY_STUFFS/INFLIBNET/lecture_attendance_alarm_app/android/app/src/debug/AndroidManifest.xml:6:22-64
+15-->/Users/nimisha/MY_STUFFS/INFLIBNET/lecture-attendance-alarm-flutter/android/app/src/debug/AndroidManifest.xml:6:5-66
+15-->/Users/nimisha/MY_STUFFS/INFLIBNET/lecture-attendance-alarm-flutter/android/app/src/debug/AndroidManifest.xml:6:22-64
 16    <uses-permission android:name="android.permission.USE_FULL_SCREEN_INTENT" />
-16-->/Users/nimisha/MY_STUFFS/INFLIBNET/lecture_attendance_alarm_app/android/app/src/main/AndroidManifest.xml:3:5-81
-16-->/Users/nimisha/MY_STUFFS/INFLIBNET/lecture_attendance_alarm_app/android/app/src/main/AndroidManifest.xml:3:22-78
+16-->/Users/nimisha/MY_STUFFS/INFLIBNET/lecture-attendance-alarm-flutter/android/app/src/main/AndroidManifest.xml:3:5-81
+16-->/Users/nimisha/MY_STUFFS/INFLIBNET/lecture-attendance-alarm-flutter/android/app/src/main/AndroidManifest.xml:3:22-78
 17    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
-17-->/Users/nimisha/MY_STUFFS/INFLIBNET/lecture_attendance_alarm_app/android/app/src/main/AndroidManifest.xml:4:5-77
-17-->/Users/nimisha/MY_STUFFS/INFLIBNET/lecture_attendance_alarm_app/android/app/src/main/AndroidManifest.xml:4:22-74
+17-->/Users/nimisha/MY_STUFFS/INFLIBNET/lecture-attendance-alarm-flutter/android/app/src/main/AndroidManifest.xml:4:5-77
+17-->/Users/nimisha/MY_STUFFS/INFLIBNET/lecture-attendance-alarm-flutter/android/app/src/main/AndroidManifest.xml:4:22-74
 18    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
-18-->/Users/nimisha/MY_STUFFS/INFLIBNET/lecture_attendance_alarm_app/android/app/src/main/AndroidManifest.xml:5:5-79
-18-->/Users/nimisha/MY_STUFFS/INFLIBNET/lecture_attendance_alarm_app/android/app/src/main/AndroidManifest.xml:5:22-76
+18-->/Users/nimisha/MY_STUFFS/INFLIBNET/lecture-attendance-alarm-flutter/android/app/src/main/AndroidManifest.xml:5:5-79
+18-->/Users/nimisha/MY_STUFFS/INFLIBNET/lecture-attendance-alarm-flutter/android/app/src/main/AndroidManifest.xml:5:22-76
 19    <uses-permission android:name="android.permission.WAKE_LOCK" />
-19-->/Users/nimisha/MY_STUFFS/INFLIBNET/lecture_attendance_alarm_app/android/app/src/main/AndroidManifest.xml:6:5-68
-19-->/Users/nimisha/MY_STUFFS/INFLIBNET/lecture_attendance_alarm_app/android/app/src/main/AndroidManifest.xml:6:22-65
+19-->/Users/nimisha/MY_STUFFS/INFLIBNET/lecture-attendance-alarm-flutter/android/app/src/main/AndroidManifest.xml:6:5-68
+19-->/Users/nimisha/MY_STUFFS/INFLIBNET/lecture-attendance-alarm-flutter/android/app/src/main/AndroidManifest.xml:6:22-65
 20    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
-20-->/Users/nimisha/MY_STUFFS/INFLIBNET/lecture_attendance_alarm_app/android/app/src/main/AndroidManifest.xml:7:5-81
-20-->/Users/nimisha/MY_STUFFS/INFLIBNET/lecture_attendance_alarm_app/android/app/src/main/AndroidManifest.xml:7:22-78
+20-->/Users/nimisha/MY_STUFFS/INFLIBNET/lecture-attendance-alarm-flutter/android/app/src/main/AndroidManifest.xml:7:5-81
+20-->/Users/nimisha/MY_STUFFS/INFLIBNET/lecture-attendance-alarm-flutter/android/app/src/main/AndroidManifest.xml:7:22-78
 21    <!--
 22 Required to query activities that can process text, see:
 23         https://developer.android.com/training/package-visibility and
@@ -38,22 +38,22 @@
 26         In particular, this is used by the Flutter engine in io.flutter.plugin.text.ProcessTextPlugin.
 27    -->
 28    <queries>
-28-->/Users/nimisha/MY_STUFFS/INFLIBNET/lecture_attendance_alarm_app/android/app/src/main/AndroidManifest.xml:64:5-69:15
+28-->/Users/nimisha/MY_STUFFS/INFLIBNET/lecture-attendance-alarm-flutter/android/app/src/main/AndroidManifest.xml:64:5-69:15
 29        <intent>
-29-->/Users/nimisha/MY_STUFFS/INFLIBNET/lecture_attendance_alarm_app/android/app/src/main/AndroidManifest.xml:65:9-68:18
+29-->/Users/nimisha/MY_STUFFS/INFLIBNET/lecture-attendance-alarm-flutter/android/app/src/main/AndroidManifest.xml:65:9-68:18
 30            <action android:name="android.intent.action.PROCESS_TEXT" />
-30-->/Users/nimisha/MY_STUFFS/INFLIBNET/lecture_attendance_alarm_app/android/app/src/main/AndroidManifest.xml:66:13-73
-30-->/Users/nimisha/MY_STUFFS/INFLIBNET/lecture_attendance_alarm_app/android/app/src/main/AndroidManifest.xml:66:21-70
+30-->/Users/nimisha/MY_STUFFS/INFLIBNET/lecture-attendance-alarm-flutter/android/app/src/main/AndroidManifest.xml:66:13-73
+30-->/Users/nimisha/MY_STUFFS/INFLIBNET/lecture-attendance-alarm-flutter/android/app/src/main/AndroidManifest.xml:66:21-70
 31
 32            <data android:mimeType="text/plain" />
-32-->/Users/nimisha/MY_STUFFS/INFLIBNET/lecture_attendance_alarm_app/android/app/src/main/AndroidManifest.xml:67:13-51
-32-->/Users/nimisha/MY_STUFFS/INFLIBNET/lecture_attendance_alarm_app/android/app/src/main/AndroidManifest.xml:67:19-48
+32-->/Users/nimisha/MY_STUFFS/INFLIBNET/lecture-attendance-alarm-flutter/android/app/src/main/AndroidManifest.xml:67:13-51
+32-->/Users/nimisha/MY_STUFFS/INFLIBNET/lecture-attendance-alarm-flutter/android/app/src/main/AndroidManifest.xml:67:19-48
 33        </intent>
 34    </queries>
 35
 36    <uses-permission android:name="android.permission.VIBRATE" />
-36-->[:flutter_local_notifications] /Users/nimisha/MY_STUFFS/INFLIBNET/lecture_attendance_alarm_app/build/flutter_local_notifications/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:7:5-66
-36-->[:flutter_local_notifications] /Users/nimisha/MY_STUFFS/INFLIBNET/lecture_attendance_alarm_app/build/flutter_local_notifications/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:7:22-63
+36-->[:flutter_local_notifications] /Users/nimisha/MY_STUFFS/INFLIBNET/lecture-attendance-alarm-flutter/build/flutter_local_notifications/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:7:5-66
+36-->[:flutter_local_notifications] /Users/nimisha/MY_STUFFS/INFLIBNET/lecture-attendance-alarm-flutter/build/flutter_local_notifications/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:7:22-63
 37
 38    <permission
 38-->[androidx.core:core:1.13.1] /Users/nimisha/.gradle/caches/8.10.2/transforms/dfc2fbca530748e569b0737b09fa016f/transformed/core-1.13.1/AndroidManifest.xml:22:5-24:47

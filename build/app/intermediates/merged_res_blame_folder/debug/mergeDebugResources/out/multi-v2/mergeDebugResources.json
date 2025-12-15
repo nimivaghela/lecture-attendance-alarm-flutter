@@ -468,24 +468,7 @@
             "outputFile": "com.example.lecture_attendance_alarm_app-debug-43:/values-night-v8_values-night-v8.arsc.flat",
             "map": [
                 {
-                    "source": "/Users/nimisha/.gradle/caches/8.10.2/transforms/845d779a6f9703b804f5e43452bcc2e5/transformed/appcompat-1.1.0/res/values-night-v8/values-night-v8.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,125,209,293,389,491,593,687",
-                        "endColumns": "69,83,83,95,101,101,93,88",
-                        "endOffsets": "120,204,288,384,486,588,682,771"
-                    },
-                    "to": {
-                        "startLines": "9,10,11,12,13,14,15,16",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "405,475,559,643,739,841,943,1037",
-                        "endColumns": "69,83,83,95,101,101,93,88",
-                        "endOffsets": "470,554,638,734,836,938,1032,1121"
-                    }
-                },
-                {
-                    "source": "/Users/nimisha/MY_STUFFS/INFLIBNET/lecture_attendance_alarm_app/android/app/src/main/res/values-night/styles.xml",
+                    "source": "/Users/nimisha/MY_STUFFS/INFLIBNET/lecture-attendance-alarm-flutter/android/app/src/main/res/values-night/styles.xml",
                     "from": {
                         "startLines": "3,14",
                         "startColumns": "4,4",
@@ -501,6 +484,23 @@
                         "endLines": "5,8",
                         "endColumns": "12,12",
                         "endOffsets": "231,400"
+                    }
+                },
+                {
+                    "source": "/Users/nimisha/.gradle/caches/8.10.2/transforms/845d779a6f9703b804f5e43452bcc2e5/transformed/appcompat-1.1.0/res/values-night-v8/values-night-v8.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,125,209,293,389,491,593,687",
+                        "endColumns": "69,83,83,95,101,101,93,88",
+                        "endOffsets": "120,204,288,384,486,588,682,771"
+                    },
+                    "to": {
+                        "startLines": "9,10,11,12,13,14,15,16",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "405,475,559,643,739,841,943,1037",
+                        "endColumns": "69,83,83,95,101,101,93,88",
+                        "endOffsets": "470,554,638,734,836,938,1032,1121"
                     }
                 }
             ]
@@ -2889,6 +2889,25 @@
                     }
                 },
                 {
+                    "source": "/Users/nimisha/MY_STUFFS/INFLIBNET/lecture-attendance-alarm-flutter/android/app/src/main/res/values/styles.xml",
+                    "from": {
+                        "startLines": "3,14",
+                        "startColumns": "4,4",
+                        "startOffsets": "173,818",
+                        "endLines": "7,16",
+                        "endColumns": "12,12",
+                        "endOffsets": "476,982"
+                    },
+                    "to": {
+                        "startLines": "1493,1497",
+                        "startColumns": "4,4",
+                        "startOffsets": "93883,94064",
+                        "endLines": "1496,1499",
+                        "endColumns": "12,12",
+                        "endOffsets": "94059,94228"
+                    }
+                },
+                {
                     "source": "/Users/nimisha/.gradle/caches/8.10.2/transforms/aed2861b2b6894f7067df3f3f96b791f/transformed/jetified-window-1.2.0/res/values/values.xml",
                     "from": {
                         "startLines": "2,3,9,17,25,37,43,49,50,51,52,53,54,55,61,66,74,89",
@@ -3119,25 +3138,6 @@
                         "startOffsets": "18512,18552,18769,19107,19162,20179,20233,20285,20334,20395",
                         "endColumns": "39,46,42,54,46,53,51,48,60,49",
                         "endOffsets": "18547,18594,18807,19157,19204,20228,20280,20329,20390,20440"
-                    }
-                },
-                {
-                    "source": "/Users/nimisha/MY_STUFFS/INFLIBNET/lecture_attendance_alarm_app/android/app/src/main/res/values/styles.xml",
-                    "from": {
-                        "startLines": "3,14",
-                        "startColumns": "4,4",
-                        "startOffsets": "173,818",
-                        "endLines": "7,16",
-                        "endColumns": "12,12",
-                        "endOffsets": "476,982"
-                    },
-                    "to": {
-                        "startLines": "1493,1497",
-                        "startColumns": "4,4",
-                        "startOffsets": "93883,94064",
-                        "endLines": "1496,1499",
-                        "endColumns": "12,12",
-                        "endOffsets": "94059,94228"
                     }
                 }
             ]

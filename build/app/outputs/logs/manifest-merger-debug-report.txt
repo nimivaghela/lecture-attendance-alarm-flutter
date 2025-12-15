@@ -1,7 +1,7 @@
 -- Merging decision tree log ---
 application
-INJECTED from /Users/nimisha/MY_STUFFS/INFLIBNET/lecture_attendance_alarm_app/android/app/src/main/AndroidManifest.xml:11:5-58:19
-INJECTED from /Users/nimisha/MY_STUFFS/INFLIBNET/lecture_attendance_alarm_app/android/app/src/debug/AndroidManifest.xml
+INJECTED from /Users/nimisha/MY_STUFFS/INFLIBNET/lecture-attendance-alarm-flutter/android/app/src/main/AndroidManifest.xml:11:5-58:19
+INJECTED from /Users/nimisha/MY_STUFFS/INFLIBNET/lecture-attendance-alarm-flutter/android/app/src/debug/AndroidManifest.xml
 MERGED from [androidx.window:window:1.2.0] /Users/nimisha/.gradle/caches/8.10.2/transforms/aed2861b2b6894f7067df3f3f96b791f/transformed/jetified-window-1.2.0/AndroidManifest.xml:22:5-29:19
 MERGED from [androidx.window:window:1.2.0] /Users/nimisha/.gradle/caches/8.10.2/transforms/aed2861b2b6894f7067df3f3f96b791f/transformed/jetified-window-1.2.0/AndroidManifest.xml:22:5-29:19
 MERGED from [androidx.core:core:1.13.1] /Users/nimisha/.gradle/caches/8.10.2/transforms/dfc2fbca530748e569b0737b09fa016f/transformed/core-1.13.1/AndroidManifest.xml:28:5-89
@@ -15,19 +15,19 @@ MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/nimisha/.gradle/cach
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/nimisha/.gradle/caches/8.10.2/transforms/d1d97c503b3a4bd9cc3718f3fd84010a/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/nimisha/.gradle/caches/8.10.2/transforms/d1d97c503b3a4bd9cc3718f3fd84010a/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
 	android:extractNativeLibs
-		INJECTED from /Users/nimisha/MY_STUFFS/INFLIBNET/lecture_attendance_alarm_app/android/app/src/debug/AndroidManifest.xml
+		INJECTED from /Users/nimisha/MY_STUFFS/INFLIBNET/lecture-attendance-alarm-flutter/android/app/src/debug/AndroidManifest.xml
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.13.1] /Users/nimisha/.gradle/caches/8.10.2/transforms/dfc2fbca530748e569b0737b09fa016f/transformed/core-1.13.1/AndroidManifest.xml:28:18-86
 	android:name
-		INJECTED from /Users/nimisha/MY_STUFFS/INFLIBNET/lecture_attendance_alarm_app/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/nimisha/MY_STUFFS/INFLIBNET/lecture-attendance-alarm-flutter/android/app/src/main/AndroidManifest.xml
 manifest
-ADDED from /Users/nimisha/MY_STUFFS/INFLIBNET/lecture_attendance_alarm_app/android/app/src/main/AndroidManifest.xml:1:1-70:12
-MERGED from /Users/nimisha/MY_STUFFS/INFLIBNET/lecture_attendance_alarm_app/android/app/src/main/AndroidManifest.xml:1:1-70:12
-INJECTED from /Users/nimisha/MY_STUFFS/INFLIBNET/lecture_attendance_alarm_app/android/app/src/debug/AndroidManifest.xml:1:1-7:12
-INJECTED from /Users/nimisha/MY_STUFFS/INFLIBNET/lecture_attendance_alarm_app/android/app/src/debug/AndroidManifest.xml:1:1-7:12
-INJECTED from /Users/nimisha/MY_STUFFS/INFLIBNET/lecture_attendance_alarm_app/android/app/src/debug/AndroidManifest.xml:1:1-7:12
-MERGED from [:flutter_local_notifications] /Users/nimisha/MY_STUFFS/INFLIBNET/lecture_attendance_alarm_app/build/flutter_local_notifications/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:2:1-10:12
-MERGED from [:shared_preferences_android] /Users/nimisha/MY_STUFFS/INFLIBNET/lecture_attendance_alarm_app/build/shared_preferences_android/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:2:1-7:12
+ADDED from /Users/nimisha/MY_STUFFS/INFLIBNET/lecture-attendance-alarm-flutter/android/app/src/main/AndroidManifest.xml:1:1-70:12
+MERGED from /Users/nimisha/MY_STUFFS/INFLIBNET/lecture-attendance-alarm-flutter/android/app/src/main/AndroidManifest.xml:1:1-70:12
+INJECTED from /Users/nimisha/MY_STUFFS/INFLIBNET/lecture-attendance-alarm-flutter/android/app/src/debug/AndroidManifest.xml:1:1-7:12
+INJECTED from /Users/nimisha/MY_STUFFS/INFLIBNET/lecture-attendance-alarm-flutter/android/app/src/debug/AndroidManifest.xml:1:1-7:12
+INJECTED from /Users/nimisha/MY_STUFFS/INFLIBNET/lecture-attendance-alarm-flutter/android/app/src/debug/AndroidManifest.xml:1:1-7:12
+MERGED from [:flutter_local_notifications] /Users/nimisha/MY_STUFFS/INFLIBNET/lecture-attendance-alarm-flutter/build/flutter_local_notifications/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:2:1-10:12
+MERGED from [:shared_preferences_android] /Users/nimisha/MY_STUFFS/INFLIBNET/lecture-attendance-alarm-flutter/build/shared_preferences_android/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.datastore:datastore-preferences-core-android:1.1.7] /Users/nimisha/.gradle/caches/8.10.2/transforms/d07c43901f7d0a35921446c051fde7a6/transformed/jetified-datastore-preferences-core-release/AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.datastore:datastore-core-android:1.1.7] /Users/nimisha/.gradle/caches/8.10.2/transforms/b09c5fee6972d76c5a1ad01f6657cd9a/transformed/jetified-datastore-core-release/AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.datastore:datastore-preferences-android:1.1.7] /Users/nimisha/.gradle/caches/8.10.2/transforms/4cb575da6de09ef4a37527b7f4a2786c/transformed/jetified-datastore-preferences-release/AndroidManifest.xml:17:1-22:12
@@ -83,59 +83,59 @@ MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/
 MERGED from [androidx.print:print:1.0.0] /Users/nimisha/.gradle/caches/8.10.2/transforms/a849f704a19700db11ee500f47aae641/transformed/print-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [com.getkeepsafe.relinker:relinker:1.4.5] /Users/nimisha/.gradle/caches/8.10.2/transforms/1841dfdc9324175fac5338109cf574de/transformed/jetified-relinker-1.4.5/AndroidManifest.xml:2:1-7:12
 	package
-		INJECTED from /Users/nimisha/MY_STUFFS/INFLIBNET/lecture_attendance_alarm_app/android/app/src/debug/AndroidManifest.xml
+		INJECTED from /Users/nimisha/MY_STUFFS/INFLIBNET/lecture-attendance-alarm-flutter/android/app/src/debug/AndroidManifest.xml
 	android:versionName
-		INJECTED from /Users/nimisha/MY_STUFFS/INFLIBNET/lecture_attendance_alarm_app/android/app/src/debug/AndroidManifest.xml
+		INJECTED from /Users/nimisha/MY_STUFFS/INFLIBNET/lecture-attendance-alarm-flutter/android/app/src/debug/AndroidManifest.xml
 	android:versionCode
-		INJECTED from /Users/nimisha/MY_STUFFS/INFLIBNET/lecture_attendance_alarm_app/android/app/src/debug/AndroidManifest.xml
+		INJECTED from /Users/nimisha/MY_STUFFS/INFLIBNET/lecture-attendance-alarm-flutter/android/app/src/debug/AndroidManifest.xml
 	xmlns:android
-		ADDED from /Users/nimisha/MY_STUFFS/INFLIBNET/lecture_attendance_alarm_app/android/app/src/main/AndroidManifest.xml:1:11-69
+		ADDED from /Users/nimisha/MY_STUFFS/INFLIBNET/lecture-attendance-alarm-flutter/android/app/src/main/AndroidManifest.xml:1:11-69
 uses-permission#android.permission.USE_FULL_SCREEN_INTENT
-ADDED from /Users/nimisha/MY_STUFFS/INFLIBNET/lecture_attendance_alarm_app/android/app/src/main/AndroidManifest.xml:3:5-81
+ADDED from /Users/nimisha/MY_STUFFS/INFLIBNET/lecture-attendance-alarm-flutter/android/app/src/main/AndroidManifest.xml:3:5-81
 	android:name
-		ADDED from /Users/nimisha/MY_STUFFS/INFLIBNET/lecture_attendance_alarm_app/android/app/src/main/AndroidManifest.xml:3:22-78
+		ADDED from /Users/nimisha/MY_STUFFS/INFLIBNET/lecture-attendance-alarm-flutter/android/app/src/main/AndroidManifest.xml:3:22-78
 uses-permission#android.permission.POST_NOTIFICATIONS
-ADDED from /Users/nimisha/MY_STUFFS/INFLIBNET/lecture_attendance_alarm_app/android/app/src/main/AndroidManifest.xml:4:5-77
-MERGED from [:flutter_local_notifications] /Users/nimisha/MY_STUFFS/INFLIBNET/lecture_attendance_alarm_app/build/flutter_local_notifications/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:8:5-77
-MERGED from [:flutter_local_notifications] /Users/nimisha/MY_STUFFS/INFLIBNET/lecture_attendance_alarm_app/build/flutter_local_notifications/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:8:5-77
+ADDED from /Users/nimisha/MY_STUFFS/INFLIBNET/lecture-attendance-alarm-flutter/android/app/src/main/AndroidManifest.xml:4:5-77
+MERGED from [:flutter_local_notifications] /Users/nimisha/MY_STUFFS/INFLIBNET/lecture-attendance-alarm-flutter/build/flutter_local_notifications/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:8:5-77
+MERGED from [:flutter_local_notifications] /Users/nimisha/MY_STUFFS/INFLIBNET/lecture-attendance-alarm-flutter/build/flutter_local_notifications/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:8:5-77
 	android:name
-		ADDED from /Users/nimisha/MY_STUFFS/INFLIBNET/lecture_attendance_alarm_app/android/app/src/main/AndroidManifest.xml:4:22-74
+		ADDED from /Users/nimisha/MY_STUFFS/INFLIBNET/lecture-attendance-alarm-flutter/android/app/src/main/AndroidManifest.xml:4:22-74
 uses-permission#android.permission.SCHEDULE_EXACT_ALARM
-ADDED from /Users/nimisha/MY_STUFFS/INFLIBNET/lecture_attendance_alarm_app/android/app/src/main/AndroidManifest.xml:5:5-79
+ADDED from /Users/nimisha/MY_STUFFS/INFLIBNET/lecture-attendance-alarm-flutter/android/app/src/main/AndroidManifest.xml:5:5-79
 	android:name
-		ADDED from /Users/nimisha/MY_STUFFS/INFLIBNET/lecture_attendance_alarm_app/android/app/src/main/AndroidManifest.xml:5:22-76
+		ADDED from /Users/nimisha/MY_STUFFS/INFLIBNET/lecture-attendance-alarm-flutter/android/app/src/main/AndroidManifest.xml:5:22-76
 uses-permission#android.permission.WAKE_LOCK
-ADDED from /Users/nimisha/MY_STUFFS/INFLIBNET/lecture_attendance_alarm_app/android/app/src/main/AndroidManifest.xml:6:5-68
+ADDED from /Users/nimisha/MY_STUFFS/INFLIBNET/lecture-attendance-alarm-flutter/android/app/src/main/AndroidManifest.xml:6:5-68
 	android:name
-		ADDED from /Users/nimisha/MY_STUFFS/INFLIBNET/lecture_attendance_alarm_app/android/app/src/main/AndroidManifest.xml:6:22-65
+		ADDED from /Users/nimisha/MY_STUFFS/INFLIBNET/lecture-attendance-alarm-flutter/android/app/src/main/AndroidManifest.xml:6:22-65
 uses-permission#android.permission.RECEIVE_BOOT_COMPLETED
-ADDED from /Users/nimisha/MY_STUFFS/INFLIBNET/lecture_attendance_alarm_app/android/app/src/main/AndroidManifest.xml:7:5-81
+ADDED from /Users/nimisha/MY_STUFFS/INFLIBNET/lecture-attendance-alarm-flutter/android/app/src/main/AndroidManifest.xml:7:5-81
 	android:name
-		ADDED from /Users/nimisha/MY_STUFFS/INFLIBNET/lecture_attendance_alarm_app/android/app/src/main/AndroidManifest.xml:7:22-78
+		ADDED from /Users/nimisha/MY_STUFFS/INFLIBNET/lecture-attendance-alarm-flutter/android/app/src/main/AndroidManifest.xml:7:22-78
 queries
-ADDED from /Users/nimisha/MY_STUFFS/INFLIBNET/lecture_attendance_alarm_app/android/app/src/main/AndroidManifest.xml:64:5-69:15
+ADDED from /Users/nimisha/MY_STUFFS/INFLIBNET/lecture-attendance-alarm-flutter/android/app/src/main/AndroidManifest.xml:64:5-69:15
 intent#action:name:android.intent.action.PROCESS_TEXT+data:mimeType:text/plain
-ADDED from /Users/nimisha/MY_STUFFS/INFLIBNET/lecture_attendance_alarm_app/android/app/src/main/AndroidManifest.xml:65:9-68:18
+ADDED from /Users/nimisha/MY_STUFFS/INFLIBNET/lecture-attendance-alarm-flutter/android/app/src/main/AndroidManifest.xml:65:9-68:18
 action#android.intent.action.PROCESS_TEXT
-ADDED from /Users/nimisha/MY_STUFFS/INFLIBNET/lecture_attendance_alarm_app/android/app/src/main/AndroidManifest.xml:66:13-73
+ADDED from /Users/nimisha/MY_STUFFS/INFLIBNET/lecture-attendance-alarm-flutter/android/app/src/main/AndroidManifest.xml:66:13-73
 	android:name
-		ADDED from /Users/nimisha/MY_STUFFS/INFLIBNET/lecture_attendance_alarm_app/android/app/src/main/AndroidManifest.xml:66:21-70
+		ADDED from /Users/nimisha/MY_STUFFS/INFLIBNET/lecture-attendance-alarm-flutter/android/app/src/main/AndroidManifest.xml:66:21-70
 data
-ADDED from /Users/nimisha/MY_STUFFS/INFLIBNET/lecture_attendance_alarm_app/android/app/src/main/AndroidManifest.xml:67:13-51
+ADDED from /Users/nimisha/MY_STUFFS/INFLIBNET/lecture-attendance-alarm-flutter/android/app/src/main/AndroidManifest.xml:67:13-51
 	android:mimeType
-		ADDED from /Users/nimisha/MY_STUFFS/INFLIBNET/lecture_attendance_alarm_app/android/app/src/main/AndroidManifest.xml:67:19-48
+		ADDED from /Users/nimisha/MY_STUFFS/INFLIBNET/lecture-attendance-alarm-flutter/android/app/src/main/AndroidManifest.xml:67:19-48
 uses-permission#android.permission.INTERNET
-ADDED from /Users/nimisha/MY_STUFFS/INFLIBNET/lecture_attendance_alarm_app/android/app/src/debug/AndroidManifest.xml:6:5-66
+ADDED from /Users/nimisha/MY_STUFFS/INFLIBNET/lecture-attendance-alarm-flutter/android/app/src/debug/AndroidManifest.xml:6:5-66
 	android:name
-		ADDED from /Users/nimisha/MY_STUFFS/INFLIBNET/lecture_attendance_alarm_app/android/app/src/debug/AndroidManifest.xml:6:22-64
+		ADDED from /Users/nimisha/MY_STUFFS/INFLIBNET/lecture-attendance-alarm-flutter/android/app/src/debug/AndroidManifest.xml:6:22-64
 uses-sdk
-INJECTED from /Users/nimisha/MY_STUFFS/INFLIBNET/lecture_attendance_alarm_app/android/app/src/debug/AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from /Users/nimisha/MY_STUFFS/INFLIBNET/lecture_attendance_alarm_app/android/app/src/debug/AndroidManifest.xml
-INJECTED from /Users/nimisha/MY_STUFFS/INFLIBNET/lecture_attendance_alarm_app/android/app/src/debug/AndroidManifest.xml
-MERGED from [:flutter_local_notifications] /Users/nimisha/MY_STUFFS/INFLIBNET/lecture_attendance_alarm_app/build/flutter_local_notifications/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:5:5-44
-MERGED from [:flutter_local_notifications] /Users/nimisha/MY_STUFFS/INFLIBNET/lecture_attendance_alarm_app/build/flutter_local_notifications/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:5:5-44
-MERGED from [:shared_preferences_android] /Users/nimisha/MY_STUFFS/INFLIBNET/lecture_attendance_alarm_app/build/shared_preferences_android/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:5:5-44
-MERGED from [:shared_preferences_android] /Users/nimisha/MY_STUFFS/INFLIBNET/lecture_attendance_alarm_app/build/shared_preferences_android/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:5:5-44
+INJECTED from /Users/nimisha/MY_STUFFS/INFLIBNET/lecture-attendance-alarm-flutter/android/app/src/debug/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/nimisha/MY_STUFFS/INFLIBNET/lecture-attendance-alarm-flutter/android/app/src/debug/AndroidManifest.xml
+INJECTED from /Users/nimisha/MY_STUFFS/INFLIBNET/lecture-attendance-alarm-flutter/android/app/src/debug/AndroidManifest.xml
+MERGED from [:flutter_local_notifications] /Users/nimisha/MY_STUFFS/INFLIBNET/lecture-attendance-alarm-flutter/build/flutter_local_notifications/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:5:5-44
+MERGED from [:flutter_local_notifications] /Users/nimisha/MY_STUFFS/INFLIBNET/lecture-attendance-alarm-flutter/build/flutter_local_notifications/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:5:5-44
+MERGED from [:shared_preferences_android] /Users/nimisha/MY_STUFFS/INFLIBNET/lecture-attendance-alarm-flutter/build/shared_preferences_android/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:5:5-44
+MERGED from [:shared_preferences_android] /Users/nimisha/MY_STUFFS/INFLIBNET/lecture-attendance-alarm-flutter/build/shared_preferences_android/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:5:5-44
 MERGED from [androidx.datastore:datastore-preferences-core-android:1.1.7] /Users/nimisha/.gradle/caches/8.10.2/transforms/d07c43901f7d0a35921446c051fde7a6/transformed/jetified-datastore-preferences-core-release/AndroidManifest.xml:5:5-44
 MERGED from [androidx.datastore:datastore-preferences-core-android:1.1.7] /Users/nimisha/.gradle/caches/8.10.2/transforms/d07c43901f7d0a35921446c051fde7a6/transformed/jetified-datastore-preferences-core-release/AndroidManifest.xml:5:5-44
 MERGED from [androidx.datastore:datastore-core-android:1.1.7] /Users/nimisha/.gradle/caches/8.10.2/transforms/b09c5fee6972d76c5a1ad01f6657cd9a/transformed/jetified-datastore-core-release/AndroidManifest.xml:5:5-44
@@ -245,13 +245,13 @@ MERGED from [androidx.print:print:1.0.0] /Users/nimisha/.gradle/caches/8.10.2/tr
 MERGED from [com.getkeepsafe.relinker:relinker:1.4.5] /Users/nimisha/.gradle/caches/8.10.2/transforms/1841dfdc9324175fac5338109cf574de/transformed/jetified-relinker-1.4.5/AndroidManifest.xml:5:5-43
 MERGED from [com.getkeepsafe.relinker:relinker:1.4.5] /Users/nimisha/.gradle/caches/8.10.2/transforms/1841dfdc9324175fac5338109cf574de/transformed/jetified-relinker-1.4.5/AndroidManifest.xml:5:5-43
 	android:targetSdkVersion
-		INJECTED from /Users/nimisha/MY_STUFFS/INFLIBNET/lecture_attendance_alarm_app/android/app/src/debug/AndroidManifest.xml
+		INJECTED from /Users/nimisha/MY_STUFFS/INFLIBNET/lecture-attendance-alarm-flutter/android/app/src/debug/AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from /Users/nimisha/MY_STUFFS/INFLIBNET/lecture_attendance_alarm_app/android/app/src/debug/AndroidManifest.xml
+		INJECTED from /Users/nimisha/MY_STUFFS/INFLIBNET/lecture-attendance-alarm-flutter/android/app/src/debug/AndroidManifest.xml
 uses-permission#android.permission.VIBRATE
-ADDED from [:flutter_local_notifications] /Users/nimisha/MY_STUFFS/INFLIBNET/lecture_attendance_alarm_app/build/flutter_local_notifications/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:7:5-66
+ADDED from [:flutter_local_notifications] /Users/nimisha/MY_STUFFS/INFLIBNET/lecture-attendance-alarm-flutter/build/flutter_local_notifications/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:7:5-66
 	android:name
-		ADDED from [:flutter_local_notifications] /Users/nimisha/MY_STUFFS/INFLIBNET/lecture_attendance_alarm_app/build/flutter_local_notifications/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:7:22-63
+		ADDED from [:flutter_local_notifications] /Users/nimisha/MY_STUFFS/INFLIBNET/lecture-attendance-alarm-flutter/build/flutter_local_notifications/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:7:22-63
 uses-library#androidx.window.extensions
 ADDED from [androidx.window:window:1.2.0] /Users/nimisha/.gradle/caches/8.10.2/transforms/aed2861b2b6894f7067df3f3f96b791f/transformed/jetified-window-1.2.0/AndroidManifest.xml:23:9-25:40
 	android:required
