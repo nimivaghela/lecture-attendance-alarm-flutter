@@ -87,19 +87,17 @@ class _LectureHomeScreenState extends State<LectureHomeScreen> {
             data: baseTheme.copyWith(
               // white/black theme
               colorScheme: const ColorScheme.light(
-                primary: Colors.white, // selected tile background
-                onPrimary: Colors.black, // text on selected tile
-                surface: Colors.white, // dialog background
-                onSurface: Colors.black, // normal text
+                primary: Colors.white,
+                onPrimary: Colors.black,
+                surface: Colors.white,
+                onSurface: Colors.black,
               ),
               timePickerTheme: const TimePickerThemeData(
                 backgroundColor: Colors.white,
-                // border around whole dialog
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.zero,
                   side: BorderSide(color: Colors.black, width: 1),
                 ),
-                // border + square shape for HH and MM
                 hourMinuteShape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.zero,
                   side: BorderSide(color: Colors.black, width: 1),
@@ -116,9 +114,7 @@ class _LectureHomeScreenState extends State<LectureHomeScreen> {
                   foregroundColor: MaterialStatePropertyAll<Color>(
                     Colors.black,
                   ),
-                  overlayColor: const MaterialStatePropertyAll<Color>(
-                    Colors.black54,
-                  ),
+                  overlayColor: MaterialStatePropertyAll<Color>(Colors.black54),
                   shape: const MaterialStatePropertyAll<OutlinedBorder>(
                     RoundedRectangleBorder(borderRadius: BorderRadius.zero),
                   ),
@@ -165,7 +161,7 @@ class _LectureHomeScreenState extends State<LectureHomeScreen> {
     final Set<int> selectedDays =
         initialDays != null && initialDays.isNotEmpty
             ? {...initialDays}
-            : {1, 2, 3, 4, 5}; // default Mon–Fri
+            : {1, 2, 3, 4, 5};
 
     final result = await showDialog<_NewLectureData>(
       context: ctx,
@@ -290,7 +286,6 @@ class _LectureHomeScreenState extends State<LectureHomeScreen> {
                     final name = rawName.isEmpty ? 'Lecture' : rawName;
 
                     if (selectedDays.isEmpty) {
-                      // Ensure at least 1 day
                       selectedDays.add(1);
                     }
 
@@ -311,7 +306,6 @@ class _LectureHomeScreenState extends State<LectureHomeScreen> {
       },
     );
 
-    // Don't dispose nameController here (avoids "used after dispose" issues)
     return result;
   }
 
@@ -325,7 +319,7 @@ class _LectureHomeScreenState extends State<LectureHomeScreen> {
         _lectureDays.add(result.days);
         _enabled.add(true); // new lecture enabled by default
       });
-      await _saveAndSchedule(); // persist immediately if you want
+      await _saveAndSchedule();
     }
   }
 
@@ -370,7 +364,6 @@ class _LectureHomeScreenState extends State<LectureHomeScreen> {
     return _times[index];
   }
 
-  /// Build LectureSettings from current UI state and save & schedule
   Future<void> _saveAndSchedule() async {
     final List<LectureConfig> lectures = [];
 
@@ -396,10 +389,7 @@ class _LectureHomeScreenState extends State<LectureHomeScreen> {
 
     final settings = LectureSettings(lectures: lectures);
 
-    // Persist to SharedPreferences
     await LectureSettingsService.save(settings);
-
-    // Schedule notifications based on these settings
     await LectureNotificationService.instance.scheduleFromSettings(settings);
 
     if (!mounted) return;
@@ -434,44 +424,49 @@ class _LectureHomeScreenState extends State<LectureHomeScreen> {
           ),
         ],
       ),
+
+      // 👇 Scrollable area: Lectures + "Add Lecture"
       body: SingleChildScrollView(
-        child: Padding(
-          padding: const EdgeInsets.all(16),
-          child: Column(
-            children: [
-              // Dynamic rows (including newly added ones)
-              for (int i = 0; i < _controllers.length; i++)
-                _lectureRow(
-                  index: i,
-                  label: 'Lecture ${i + 1}',
-                  controller: _controllers[i],
-                  time: _times[i],
-                  days: i < _lectureDays.length ? _lectureDays[i] : null,
-                  onTapEdit: () => _openEditLectureDialog(i),
-                  onInlinePickTime: () => _pickTimeInline(i),
-                ),
-              const SizedBox(height: 12),
-
-              // Add lecture → opens popup
-              SizedBox(
-                width: double.infinity,
-                child: OutlinedButton.icon(
-                  style: OutlinedButton.styleFrom(
-                    backgroundColor: Colors.white,
-                    foregroundColor: Colors.black,
-                    shape: const RoundedRectangleBorder(
-                      borderRadius: BorderRadius.zero,
-                    ),
-                  ),
-                  onPressed: _openAddLectureDialog,
-                  icon: const Icon(Icons.add),
-                  label: const Text('Add Lecture'),
-                ),
+        padding: const EdgeInsets.all(16),
+        child: Column(
+          children: [
+            for (int i = 0; i < _controllers.length; i++)
+              _lectureRow(
+                index: i,
+                label: 'Lecture ${i + 1}',
+                controller: _controllers[i],
+                time: _times[i],
+                days: i < _lectureDays.length ? _lectureDays[i] : null,
+                onTapEdit: () => _openEditLectureDialog(i),
+                onInlinePickTime: () => _pickTimeInline(i),
               ),
+            const SizedBox(height: 12),
+            SizedBox(
+              width: double.infinity,
+              child: OutlinedButton.icon(
+                style: OutlinedButton.styleFrom(
+                  backgroundColor: Colors.white,
+                  foregroundColor: Colors.black,
+                  shape: const RoundedRectangleBorder(
+                    borderRadius: BorderRadius.zero,
+                  ),
+                ),
+                onPressed: _openAddLectureDialog,
+                icon: const Icon(Icons.add),
+                label: const Text('Add Lecture'),
+              ),
+            ),
+          ],
+        ),
+      ),
 
-              const SizedBox(height: 24),
-
-              // Save / Stop alerts
+      // 👇 Sticky bottom buttons
+      bottomNavigationBar: SafeArea(
+        child: Padding(
+          padding: const EdgeInsets.fromLTRB(16, 0, 16, 16),
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            children: [
               Row(
                 children: [
                   Expanded(
@@ -521,9 +516,7 @@ class _LectureHomeScreenState extends State<LectureHomeScreen> {
                   ),
                 ],
               ),
-
               const SizedBox(height: 12),
-
               SizedBox(
                 width: double.infinity,
                 child: OutlinedButton(
@@ -555,6 +548,8 @@ class _LectureHomeScreenState extends State<LectureHomeScreen> {
     );
   }
 
+  // ---------- ROW WIDGET ----------
+
   Widget _lectureRow({
     required int index,
     required String label,
@@ -572,11 +567,10 @@ class _LectureHomeScreenState extends State<LectureHomeScreen> {
       child: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
         child: Opacity(
-          opacity: isEnabled ? 1.0 : 0.4, // fade disabled rows
+          opacity: isEnabled ? 1.0 : 0.4,
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              // Top row: label + edit icon + switch
               Row(
                 children: [
                   Expanded(
@@ -588,7 +582,7 @@ class _LectureHomeScreenState extends State<LectureHomeScreen> {
                         hintText: 'Subject name',
                         border: InputBorder.none,
                       ),
-                      onTap: onTapEdit, // tap label area -> edit
+                      onTap: onTapEdit,
                     ),
                   ),
                   IconButton(
@@ -597,14 +591,13 @@ class _LectureHomeScreenState extends State<LectureHomeScreen> {
                     onPressed: onTapEdit,
                   ),
                   const SizedBox(width: 4),
-                  // Enable / Disable switch
                   Switch(
                     value: isEnabled,
                     onChanged: (val) async {
                       setState(() {
                         _enabled[index] = val;
                       });
-                      await _saveAndSchedule(); // persist & reschedule immediately
+                      await _saveAndSchedule();
                     },
                     activeColor: Colors.white,
                     activeTrackColor: Colors.black,
@@ -615,7 +608,6 @@ class _LectureHomeScreenState extends State<LectureHomeScreen> {
                 ],
               ),
               const SizedBox(height: 4),
-              // Time + day summary
               Row(
                 children: [
                   InkWell(
